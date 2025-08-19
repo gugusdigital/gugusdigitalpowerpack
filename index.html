@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Product Power Pack - 600+ Produk Digital Siap Jual</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+            color: white;
+            text-align: center;
+            padding: 60px 30px;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        .hero-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        .bundle-description {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            background: rgba(255,255,255,0.2);
+            padding: 20px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        .price-highlight {
+            background: rgba(255,255,255,0.95);
+            color: #333;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 30px 0;
+            font-weight: bold;
+        }
+
+        .price-highlight .promo-text {
+            color: #e74c3c;
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 3rem;
+            color: #27ae60;
+            font-weight: 900;
+        }
+
+        .countdown {
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px 0;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .section {
+            background: white;
+            margin: 40px 0;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .section-title {
+            font-size: 2.2rem;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .problems-grid {
+            display: grid;
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .problem-item {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .problem-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .problem-item .icon {
+            font-size: 1.5rem;
+            margin-top: 5px;
+        }
+
+        .problem-item .content h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .consequences-grid {
+            display: grid;
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .consequence-item {
+            background: linear-gradient(135deg, #34495e, #2c3e50);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .solution-hero {
+            background: linear-gradient(135deg, #27ae60, #2ecc71);
+            color: white;
+            text-align: center;
+            padding: 50px 30px;
+            border-radius: 20px;
+            margin: 40px 0;
+        }
+
+        .solution-hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: 800;
+        }
+
+        .solution-hero p {
+            font-size: 1.2rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+
+        .feature-item {
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-item .icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .feature-item h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .contents-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .content-item {
+            background: linear-gradient(135deg, #9b59b6, #8e44ad);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .content-item .icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .content-item h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .bonus-section {
+            background: linear-gradient(135deg, #f39c12, #e67e22);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .bonus-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .bonus-item {
+            background: rgba(255,255,255,0.2);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px 0;
+        }
+
+        .testimonial-section {
+            background: #ecf0f1;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        .urgency-section {
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .price-comparison {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+
+        .price-box {
+            background: white;
+            color: #333;
+            padding: 30px;
+            border-radius: 15px;
+            min-width: 200px;
+            text-align: center;
+        }
+
+        .price-box.featured {
+            background: linear-gradient(135deg, #27ae60, #2ecc71);
+            color: white;
+            transform: scale(1.1);
+            border: 3px solid #f1c40f;
+        }
+
+        .stock-info {
+            background: #e74c3c;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .warning-icon {
+            color: #f1c40f;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .price {
+                font-size: 2.5rem;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .price-comparison {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .price-box.featured {
+                transform: none;
+            }
+        }
+
+        .animate-pulse {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.7;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Hero Section -->
+        <div class="hero-section">
+            <h1 class="hero-title">DIGITAL PRODUCT POWER PACK</h1>
+            <p class="hero-subtitle">(Lisensi Jual Kembali)</p>
+            
+            <div class="bundle-description">
+                <h2>600+ Produk Digital Siap Jual</h2>
+                <p>Bundle terlengkap berisi 600+ produk digital berlisensi. Sekali beli, jual berkali-kali, cuan terus menerus!</p>
+            </div>
+            
+            <div class="price-highlight">
+                <div class="promo-text">PROMO TERBATAS WAKTU!</div>
+                <div class="price">RP. 59.000,-</div>
+            </div>
+            
+            <div class="countdown animate-pulse">
+                ⏰ PROMO BERAKHIR DALAM ⏰<br>
+                <div id="countdown" style="font-size: 2.5rem; margin-top: 15px;">
+                    <span id="hours">06</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Problem Section -->
+        <div class="section">
+            <h2 class="section-title">Masih Bingung Mau Jualan Apa di Era Digital?</h2>
+            <p style="text-align: center; font-size: 1.2rem; margin-bottom: 30px;">Kamu nggak sendirian! Banyak yang pengen cuan tapi terkendala hal-hal ini:</p>
+            
+            <div class="problems-grid">
+                <div class="problem-item">
+                    <div class="icon">❌</div>
+                    <div class="content">
+                        <h3>Bingung bikin produk sendiri</h3>
+                        <p>Butuh skill desain, coding, atau keahlian khusus</p>
+                    </div>
+                </div>
+                
+                <div class="problem-item">
+                    <div class="icon">❌</div>
+                    <div class="content">
+                        <h3>Gak tau harus mulai dari mana</h3>
+                        <p>Banyak ide tapi bingung eksekusinya</p>
+                    </div>
+                </div>
+                
+                <div class="problem-item">
+                    <div class="icon">❌</div>
+                    <div class="content">
+                        <h3>Modal terbatas</h3>
+                        <p>Takut investasi besar tapi gak balik modal</p>
+                    </div>
+                </div>
+                
+                <div class="problem-item">
+                    <div class="icon">❌</div>
+                    <div class="content">
+                        <h3>Takut produk gak laku</h3>
+                        <p>Udah cape bikin eh ternyata demand-nya kecil</p>
+                    </div>
+                </div>
+                
+                <div class="problem-item">
+                    <div class="icon">❌</div>
+                    <div class="content">
+                        <h3>Ribet urusan lisensi</h3>
+                        <p>Takut melanggar copyright</p>
+                    </div>
+                </div>
+            </div>
+            
+            <p style="text-align: center; font-size: 1.3rem; margin-top: 30px; font-weight: bold; color: #e74c3c;">
+                Sementara itu, orang lain udah duluan cuan ratusan juta dari produk digital!
+            </p>
+        </div>
+
+        <!-- Urgency Section -->
+        <div class="section">
+            <h2 class="section-title" style="color: #e74c3c;">Jangan Sampai Kamu Ketinggalan Lagi!</h2>
+            <p style="text-align: center; font-size: 1.2rem; margin-bottom: 30px;">Setiap hari yang terlewat tanpa action, itu artinya:</p>
+            
+            <div class="consequences-grid">
+                <div class="consequence-item">
+                    <div class="icon">💸</div>
+                    <div class="content">
+                        <h3>Peluang income passive hilang</h3>
+                        <p>Orang lain udah earning</p>
+                    </div>
+                </div>
+                
+                <div class="consequence-item">
+                    <div class="icon">⏰</div>
+                    <div class="content">
+                        <h3>Makin lama makin susah</h3>
+                        <p>Kompetitor makin banyak</p>
+                    </div>
+                </div>
+                
+                <div class="consequence-item">
+                    <div class="icon">😫</div>
+                    <div class="content">
+                        <h3>Stuck di zona nyaman</h3>
+                        <p>Gaji pas-pasan terus</p>
+                    </div>
+                </div>
+                
+                <div class="consequence-item">
+                    <div class="icon">🔄</div>
+                    <div class="content">
+                        <h3>Lingkaran setan</h3>
+                        <p>Pengen mulai tapi gak pernah mulai</p>
+                    </div>
+                </div>
+            </div>
+            
+            <p style="text-align: center; font-size: 1.3rem; margin-top: 30px; font-weight: bold;">
+                Padahal... solusinya udah ada di depan mata!
+            </p>
+        </div>
+
+        <!-- Solution Hero -->
+        <div class="solution-hero">
+            <h2>DIGITAL PRODUCT POWER PACK</h2>
+            <p>Bundle terlengkap berisi 600+ produk digital berlisensi resmi yang bisa langsung kamu jual!</p>
+        </div>
+
+        <!-- Features Section -->
+        <div class="section">
+            <h2 class="section-title">Keunggulan Produk</h2>
+            
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="icon">✅</div>
+                    <h3>600+ Produk Digital Siap Jual</h3>
+                    <p>Template, e-course, worksheet, planner, dll</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="icon">✅</div>
+                    <h3>Lisensi Legal PLR/MRR/UPLR</h3>
+                    <p>Aman dijual ulang tanpa takut copyright</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="icon">✅</div>
+                    <h3>Bisa Rebranding</h3>
+                    <p>Ganti logo, nama, jadi brand kamu sendiri</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="icon">✅</div>
+                    <h3>Marketing Kit Lengkap</h3>
+                    <p>Caption, banner, mockup udah disiapkan</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="icon">✅</div>
+                    <h3>Akses Mudah via Web</h3>
+                    <p>Interface user-friendly, awam pun bisa</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="icon">✅</div>
+                    <h3>Panduan Step-by-Step</h3>
+                    <p>Dari setup sampai jualan pertama</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="icon">✅</div>
+                    <h3>Update Gratis Selamanya</h3>
+                    <p>Produk baru terus ditambah tanpa biaya lagi</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contents Section -->
+        <div class="section">
+            <h2 class="section-title">Apa Aja yang Kamu Dapat?</h2>
+            
+            <div class="contents-grid">
+                <div class="content-item">
+                    <div class="icon">📚</div>
+                    <h3>Ratusan E-Course Berbagai Kategori</h3>
+                    <p>Ecourse siap jual di berbagai niche populer</p>
+                </div>
+                
+                <div class="content-item">
+                    <div class="icon">📋</div>
+                    <h3>Ribuan Template Siap Pakai</h3>
+                    <p>Template canva, elementor, notion, excel, powerpoint dll</p>
+                </div>
+                
+                <div class="content-item">
+                    <div class="icon">🎨</div>
+                    <h3>Ribuan Assets</h3>
+                    <p>Premier pro, canva, photoshop, dll</p>
+                </div>
+                
+                <div class="content-item">
+                    <div class="icon">📱</div>
+                    <h3>Mockup Siap Pakai dan Jual</h3>
+                    <p>Akses semua mockup siap pakai dan bisa jual kembali</p>
+                </div>
+                
+                <div class="content-item">
+                    <div class="icon">📔</div>
+                    <h3>Ebook, Prompt & Links</h3>
+                    <p>Akses ke berbagai ebook, prompt chatgpt dan berbagai link lainnya</p>
+                </div>
+                
+                <div class="content-item">
+                    <div class="icon">⚖️</div>
+                    <h3>License</h3>
+                    <p>Semua produk punya lisensi PLR, MRR, dan UPLR</p>
+                </div>
+                
+                <div class="content-item">
+                    <div class="icon">📈</div>
+                    <h3>Marketing Kit</h3>
+                    <p>Banner, copywriting dan marketing kit lain sudah disiapkan</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bonus Section -->
+        <div class="bonus-section">
+            <div class="icon" style="font-size: 3rem;">🎁</div>
+            <h2>BONUS KHUSUS EARLY BIRD!</h2>
+            
+            <div class="bonus-item">
+                <h3>Template Keuangan Bulanan Premium</h3>
+                <p>Google Sheets siap pakai untuk tracking income & expense bisnismu</p>
+                <p style="font-size: 1.3rem; font-weight: bold; margin-top: 15px;">
+                    Senilai Rp 99.000 - GRATIS!
+                </p>
+            </div>
+        </div>
+
+        <!-- Testimonial Section -->
+        <div class="testimonial-section">
+            <h2 class="section-title">Testimoni:</h2>
+            <p style="text-align: center; font-style: italic; color: #7f8c8d;">
+                [Testimoni akan ditampilkan di sini]
+            </p>
+        </div>
+
+        <!-- Urgency Warning -->
+        <div class="urgency-section">
+            <div class="warning-icon">⚠️</div>
+            <h2>PROMO TERBATAS WAKTU!</h2>
+            <p style="font-size: 1.2rem; margin: 20px 0;">
+                Setelah waktu habis, harga naik jadi Rp 149.000
+            </p>
+            <div style="background: rgba(255,255,255,0.2); padding: 20px; border-radius: 15px; margin: 20px 0;">
+                <div style="font-size: 1.5rem; margin-bottom: 10px;">⏰ SISA WAKTU PROMO</div>
+                <div id="countdown2" style="font-size: 2rem; font-weight: bold;">
+                    <span id="hours2">06</span>:<span id="minutes2">00</span>:<span id="seconds2">00</span>
+                </div>
+            </div>
+            <p style="font-size: 1.3rem; font-weight: bold;">
+                Jangan Tunda Lagi!<br>
+                Mulai bisnis digital product-mu hari ini. Sekali investasi, cuan berkali-kali!
+            </p>
+        </div>
+
+        <!-- Price Comparison -->
+        <div class="section">
+            <div class="price-comparison">
+                <div class="price-box featured">
+                    <div class="price" style="color: white;">Rp 59.000</div>
+                    <div style="margin: 20px 0;">
+                        <div>✅ 600+ Produk Digital</div>
+                        <div>✅ Lisensi Jual Kembali</div>
+                        <div>✅ Marketing Kit</div>
+                        <div>✅ Update Gratis</div>
+                        <div>✅ Bonus Template Keuangan</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="stock-info">
+                ⏰ Promo Berakhir Dalam: <span id="countdown3">
+                    <span id="hours3">06</span>:<span id="minutes3">00</span>:<span id="seconds3">00</span>
+                </span>
+            </div>
+        </div>
+
+        <!-- Final Urgency -->
+        <div class="urgency-section">
+            <h2>KESEMPATAN TERBATAS! ⏰</h2>
+            <p style="font-size: 1.1rem; margin: 20px 0;">
+                Waktu terus berjalan! Jangan sampai ketinggalan harga spesial ini. 
+                Setelah waktu habis… harga akan naik menjadi Rp149.000 ❌
+            </p>
+            <p style="font-size: 1.2rem; font-weight: bold;">
+                📢 Ambil kesempatan ini sekarang sebelum waktu promo berakhir!
+            </p>
+            
+            <div style="background: rgba(255,255,255,0.2); padding: 25px; border-radius: 15px; margin: 30px 0;">
+                <div style="font-size: 1.5rem; margin-bottom: 15px;">⏰ WAKTU TERSISA</div>
+                <div id="countdown4" style="font-size: 2.5rem; font-weight: bold;">
+                    <span id="hours4">06</span>:<span id="minutes4">00</span>:<span id="seconds4">00</span>
+                </div>
+            </div>
+            
+            <div class="price-comparison">
+                <div class="price-box featured">
+                    <div class="price" style="color: white;">IDR 59,000</div>
+                    <div style="margin: 10px 0; color: white;">Harga Promo</div>
+                </div>
+                <div class="price-box">
+                    <div style="font-size: 2rem; color: #e74c3c; text-decoration: line-through;">IDR 149,000</div>
+                    <div style="color: #7f8c8d;">Harga Normal</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Countdown Timer - 6 hours that resets automatically
+        function startCountdown() {
+            // Set target time to 6 hours from now
+            const sixHours = 6 * 60 * 60 * 1000; // 6 hours in milliseconds
+            let targetTime = new Date().getTime() + sixHours;
+
+            function updateCountdown() {
+                const now = new Date().getTime();
+                const timeLeft = targetTime - now;
+
+                // If time is up, reset to 6 hours again
+                if (timeLeft <= 0) {
+                    targetTime = new Date().getTime() + sixHours;
+                    return;
+                }
+
+                // Calculate hours, minutes, seconds
+                const hours = Math.floor(timeLeft / (1000 * 60 * 60));
+                const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+                // Format with leading zeros
+                const formatTime = (time) => time.toString().padStart(2, '0');
+
+                // Update all countdown displays
+                const countdowns = [
+                    { h: 'hours', m: 'minutes', s: 'seconds' },
+                    { h: 'hours2', m: 'minutes2', s: 'seconds2' },
+                    { h: 'hours3', m: 'minutes3', s: 'seconds3' },
+                    { h: 'hours4', m: 'minutes4', s: 'seconds4' }
+                ];
+
+                countdowns.forEach(countdown => {
+                    const hourEl = document.getElementById(countdown.h);
+                    const minuteEl = document.getElementById(countdown.m);
+                    const secondEl = document.getElementById(countdown.s);
+                    
+                    if (hourEl) hourEl.textContent = formatTime(hours);
+                    if (minuteEl) minuteEl.textContent = formatTime(minutes);
+                    if (secondEl) secondEl.textContent = formatTime(seconds);
+                });
+            }
+
+            // Update immediately and then every second
+            updateCountdown();
+            setInterval(updateCountdown, 1000);
+        }
+
+        // Start countdown when page loads
+        window.addEventListener('load', startCountdown);
+    </script>
+</body>
+</html>
